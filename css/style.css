@@ -1,6 +1,6 @@
 :root {
     --top:#F7F7F7;
-    --icons:#afafb5;
+    --icons:#060606;
     --logo:#535452;
     --nav:#ff8c45;
     --nav-text:#447eff;
@@ -44,11 +44,15 @@ header.topbar{
     background:var(--top);
     color:var(--icons);
     font-family:"Raleway-semibold";
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 600;
     padding:0.75rem 0;
 }
 header.topbar .icons a{
     margin-right:0.6rem;
+}
+.social-icons{
+    width: 20px;
 }
 .top-padding{
     margin-top: 15px;
@@ -153,7 +157,7 @@ header.topbar .icons a{
     position: relative;
     margin: auto;
     z-index: -1;    
-    height: 80vh;
+    /* height: 80vh; */
 }
   
   /* Hide the images by default */
@@ -161,8 +165,9 @@ header.topbar .icons a{
     display: none;
 }
 .slider-image{
+    object-fit: cover;
     width: 100%;
-    height: 80vh;
+    height: 100%;
 }
   
   /* Next & previous buttons */
@@ -217,6 +222,8 @@ header.topbar .icons a{
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
+    width: 100%;
+    height: 80vh;
 }
 .testimonials{
     background-color: var(--light);
@@ -288,8 +295,8 @@ header.topbar .icons a{
     width:100%;
     height:400px;
 }
-.gmap_iframe {
-    width:100%!important;
+.gmap_iframe 
+{
     height:400px!important;
 }
 .footer{
