@@ -58,4 +58,32 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
   },
+  // breakpoints: {
+    
+  //   768: {
+  //     slidesPerView: 3,
+  //     spaceBetween: 20,
+  //   },
+    
+  // },
 });
+
+let testSlideIndex = 0;
+showTestSlides();
+
+function showTestSlides() {
+  let i;
+  let slides = document.getElementsByClassName("test-slide");
+  let dots = document.getElementsByClassName("testimonial-dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  testSlideIndex++;
+  if (testSlideIndex > slides.length) {testSlideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[testSlideIndex-1].style.display = "block";  
+  dots[testSlideIndex-1].className += " active";
+  setTimeout(showTestSlides, 5000); // Change image every 2 seconds
+}
