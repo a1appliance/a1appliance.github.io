@@ -377,7 +377,7 @@ header.topbar .icons a {
     display: grid;
     row-gap: 25px;
     grid-template-columns: 350px 350px 350px;
-    grid-template-rows: 215px 200px;
+    grid-template-rows: 200px 220px;
     padding: 30px 100px;
     justify-content: space-around;
 }
@@ -431,9 +431,9 @@ header.topbar .icons a {
 }
 
 .footer h3 {
-    color: var(--pure);
+    color: #c0c0c0;
     padding: 15px 0;
-
+    font-weight: 600;
 }
 
 .footer a {
@@ -442,6 +442,11 @@ header.topbar .icons a {
     /* font-weight: 600; */
     font-size: 1rem;
     /* padding: 1rem 1.5rem; */
+}
+.footer a:hover {
+    /* background:var(--top); */
+    text-decoration: none;
+    color: var(--nav);
 }
 
 .footer p {
@@ -596,7 +601,7 @@ header.topbar .icons a {
     }
 
     .service-intro{
-        font-size: 15px;
+        font-size: 16px;
         padding: 0 5px;
         margin-top: 5px;
     }
