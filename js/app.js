@@ -1,3 +1,23 @@
+// const navbar = document.getElementById("my-nav-header");
+// const sticky = navbar.offsetTop;
+// function myFunction() {
+//   console.log(window.scrollY, sticky)
+//   if (window.pageYOffset > sticky) {
+//   navbar.classList.add("sticky")
+//   } else {
+//   navbar.classList.remove("sticky");
+//   }
+// }
+
+// window.onscroll = function(){
+//   console.log("Hello")
+//   myFunction()
+// }
+// console.log(window.scrollY)
+
+
+
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -87,3 +107,4 @@ function showTestSlides() {
   dots[testSlideIndex-1].className += " active";
   setTimeout(showTestSlides, 5000); // Change image every 2 seconds
 }
+

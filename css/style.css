@@ -515,7 +515,11 @@ header.topbar .icons a {
         max-width: 540px;
     }
 } */
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
 @media (max-width: 767px) {
 
     /* .container .nav-container-data {
@@ -573,7 +577,8 @@ header.topbar .icons a {
     .nav-container-mob {
         display: block;
         background: var(--nav);
-        position: relative;
+        /* position: relative; */
+        overflow: hidden;
     }
     .navbar-items-mob {
         padding: 10px;
@@ -584,6 +589,7 @@ header.topbar .icons a {
     .navbar-mob a:hover{
         color: var(--logo)
     }
+    
 
     .fade{
         height: 45vh;
