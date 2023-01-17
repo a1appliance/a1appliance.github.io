@@ -724,6 +724,7 @@ header.topbar .icons a {
     .footer-container {
         padding: 10px;
         flex-direction: column;
+        text-align: center;
     }
     .footer-mob{
         display: block;
