@@ -83,14 +83,31 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
   },
-  // breakpoints: {
-    
-  //   768: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 20,
-  //   },
-    
-  // },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerGroup: 2
+    },
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      slidesPerGroup: 5,
+    }
+  }
 });
 
 let testSlideIndex = 0;
