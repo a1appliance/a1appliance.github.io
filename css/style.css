@@ -673,6 +673,12 @@ header.topbar .icons a {
         width: 80px;
         /* height: 60px; */
     }
+    .swiper-button-prev {
+        display: none !important;
+    }
+    .swiper-button-next {
+        display: none !important;
+    }
     .test-slide-container {
         text-align: center;
         padding: 70px 10px 5px;
